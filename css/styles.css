@@ -193,6 +193,23 @@ Hero
   color: var(--clr-white);
 }
 
+@media screen and (min-width: 800px) {
+  .section-hero {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.021),
+        rgba(0, 0, 0, 0.534)
+      ),
+      url(../images/img-main-bcg.jpg) center/cover no-repeat;
+  }
+  .hero p {
+    color: var(--clr-white);
+  }
+  .hero-btn {
+    color: black;
+  }
+}
+
 /*
 =============== 
 About
