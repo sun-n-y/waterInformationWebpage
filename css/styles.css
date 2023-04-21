@@ -519,3 +519,41 @@ Gallery
 Footer
 ===============
 */
+footer {
+  background: var(--clr-grey-1);
+}
+
+.footer-content {
+  padding: 4rem 3rem;
+  text-align: center;
+}
+
+.footer-links {
+  margin-bottom: 1.5rem;
+}
+
+.footer-link {
+  color: var(--clr-white);
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  margin-right: 1rem;
+}
+
+.footer-icon {
+  color: var(--clr-white);
+  font-size: 2rem;
+  margin-right: 1rem;
+  margin-bottom: 1.5rem;
+  transition: var(--transition);
+}
+
+.footer-icon:hover {
+  color: var(--clr-primary-7);
+}
+
+.footer-content p {
+  color: var(--clr-white);
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  margin-bottom: 0;
+}
