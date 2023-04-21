@@ -327,6 +327,9 @@ Services
   .single-service {
     flex: 0 0 calc(33.333% - 2rem);
   }
+  .service-icon {
+    margin-bottom: 2rem;
+  }
 }
 
 /*
