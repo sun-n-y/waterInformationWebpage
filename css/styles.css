@@ -290,7 +290,7 @@ Services
 ===============
 */
 
-.service-section {
+.services {
   background: var(--clr-grey-10);
 }
 .single-service {
@@ -313,7 +313,7 @@ Services
 }
 
 @media screen and (min-width: 576px) {
-  .services {
+  .services-center {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
