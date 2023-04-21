@@ -69,14 +69,11 @@ ul {
 a {
   text-decoration: none;
 }
-img {
+
+img:not(.nav-logo) {
   width: 100%;
   display: block;
 }
-/* img:not(.nav-logo) {
-  width: 100%;
-  display: block;
-} */
 
 h1,
 h2,
@@ -185,6 +182,7 @@ p {
 Navbar
 ===============
 */
+
 /*
 =============== 
 Hero
@@ -212,6 +210,7 @@ Hero
 }
 .hero p {
   max-width: 35rem;
+  letter-spacing: var(--spacing);
 }
 
 .hero-btn {
