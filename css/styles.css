@@ -286,9 +286,48 @@ About
 
 /*
 =============== 
-Section 1
+Services
 ===============
 */
+
+.service-section {
+  background: var(--clr-grey-10);
+}
+.single-service {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.service-icon {
+  background-color: var(--clr-primary-5);
+  display: inline-block;
+  font-size: 2rem;
+  padding: 0.25rem 1rem;
+  margin-bottom: 1rem;
+  color: var(--clr-white);
+}
+
+.service-info {
+  max-width: 23rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 576px) {
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .single-service {
+    flex: 0 0 calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .single-service {
+    flex: 0 0 calc(33.333% - 2rem);
+  }
+}
 
 /*
 =============== 
