@@ -384,11 +384,25 @@ some pictures section
   justify-content: space-between;
 }
 
-/*
-=============== 
-Section 3
-===============
-*/
+@media screen and (min-width: 768px) {
+  .pictures-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card {
+    flex: 0 0 calc(50% - 2rem);
+  }
+}
+@media screen and (min-width: 1170px) {
+  .card {
+    flex: 0 0 calc(33.333% - 2rem);
+  }
+}
+
+.features-button {
+  text-align: center;
+}
 
 /*
 =============== 
