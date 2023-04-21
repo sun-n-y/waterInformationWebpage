@@ -410,6 +410,56 @@ Contact
 ===============
 */
 
+.contact {
+  background: var(--clr-primary-5);
+}
+
+.contact-info h3 {
+  color: var(--clr-white);
+}
+
+.contact-info p {
+  color: var(--clr-primary-8);
+}
+
+.input {
+  min-width: 20rem;
+  border: transparent;
+  padding: 0.6rem 0.6rem;
+}
+
+.input::placeholder {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  font-family: var(--ff-primary);
+}
+
+.btn-submit {
+  padding: 0.6rem 0.6rem;
+  border: transparent;
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  margin-left: 0.3rem;
+  background: var(--clr-primary-8);
+  transition: var(--transition);
+}
+
+.btn-submit:hover {
+  cursor: pointer;
+  background: var(--clr-primary-4);
+  color: var(--clr-white);
+}
+
+@media screen and (min-width: 992px) {
+  .contact-center {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .input {
+    min-width: 28rem;
+  }
+}
+
 /*
 =============== 
 Gallery
