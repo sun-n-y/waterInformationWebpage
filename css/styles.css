@@ -334,9 +334,55 @@ Services
 
 /*
 =============== 
-Section 2
+some pictures section
 ===============
 */
+
+.pic {
+  height: 17rem;
+  object-fit: cover;
+}
+
+.pic-container {
+  position: relative;
+}
+
+.pic-container p {
+  position: absolute;
+  margin-bottom: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0.2rem 0.3rem;
+  background: var(--clr-primary-1);
+  color: var(--clr-grey-5);
+}
+
+.card {
+  background: var(--clr-grey-10);
+  box-shadow: var(--light-shadow);
+  margin-bottom: 2rem;
+  transition: var(--transition);
+}
+
+.card:hover {
+  box-shadow: var(--dark-shadow);
+  transform: scale(1.02);
+}
+
+.card-info {
+  padding: 1.5rem;
+}
+
+.card-info-footer p {
+  margin-bottom: 0;
+  text-transform: capitalize;
+  color: var(--clr-primary-5);
+}
+
+.card-info-footer {
+  display: flex;
+  justify-content: space-between;
+}
 
 /*
 =============== 
