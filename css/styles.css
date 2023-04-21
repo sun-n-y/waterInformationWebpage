@@ -182,7 +182,14 @@ p {
 Navbar
 ===============
 */
+.navbar {
+  background-color: var(--clr-white);
+}
 
+.nav-links {
+  display: flex;
+  flex-direction: column;
+}
 /*
 =============== 
 Hero
