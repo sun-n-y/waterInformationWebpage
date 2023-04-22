@@ -133,6 +133,7 @@ p {
   letter-spacing: var(--spacing);
   display: inline-block;
   /* font-weight: 700; */
+  -webkit-transition: var(--transition);
   transition: var(--transition);
   font-size: 0.875rem;
   border: 2px solid transparent;
@@ -204,8 +205,11 @@ Navbar
 }
 
 .nav-header {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
   align-items: center;
   padding: 1rem 2rem;
 }
@@ -216,10 +220,12 @@ Navbar
   font-size: 1.5rem;
   color: var(--clr-primary-5);
   cursor: pointer;
+  -webkit-transition: var(--transition);
   transition: var(--transition);
 }
 
 .nav-toggle:hover {
+  -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
 
@@ -228,6 +234,7 @@ Navbar
   padding: 1rem 2rem;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
+  -webkit-transition: var(--transition);
   transition: var(--transition);
   color: var(--clr-grey-1);
   cursor: pointer;
@@ -245,6 +252,7 @@ Navbar
 .nav-links {
   height: 0;
   overflow: hidden;
+  -webkit-transition: var(--transition);
   transition: var(--transition);
 }
 
@@ -257,12 +265,16 @@ Navbar
     display: none;
   }
   .nav-center {
+    display: -webkit-box;
     display: flex;
+    -webkit-box-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
     align-items: center;
   }
   .nav-links {
     height: auto;
+    display: -webkit-box;
     display: flex;
   }
 
@@ -279,12 +291,14 @@ Navbar
     background: transparent;
   }
   .nav-icons {
+    display: -webkit-box;
     display: flex;
   }
   .nav-icon {
     margin-right: 0.7rem;
     color: var(--clr-primary-5);
     font-size: 1.2rem;
+    -webkit-transition: var(--transition);
     transition: var(--transition);
   }
   .nav-icon:hover {
@@ -309,9 +323,14 @@ Hero
 
 .hero {
   height: 100%;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-direction: column;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
   text-align: center;
   padding: 2rem;
@@ -340,6 +359,14 @@ Hero
 
 @media screen and (min-width: 800px) {
   .section-hero {
+    background: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        from(rgba(0, 0, 0, 0.021)),
+        to(rgba(0, 0, 0, 0.534))
+      ),
+      url(../images/img-main-bcg.jpg) center/cover no-repeat;
     background: linear-gradient(
         to top,
         rgba(0, 0, 0, 0.021),
@@ -367,12 +394,16 @@ About
 
 @media screen and (min-width: 992px) {
   .about-center {
+    display: -webkit-box;
     display: flex;
+    -webkit-box-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
     align-items: center;
   }
   .about-info,
   .about-img-container {
+    -webkit-box-flex: 0;
     flex: 0 0 calc(50% - 2rem);
     margin-top: 0;
     align-self: center;
@@ -426,17 +457,21 @@ Services
 
 @media screen and (min-width: 576px) {
   .services-center {
+    display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
     justify-content: space-between;
   }
   .single-service {
+    -webkit-box-flex: 0;
     flex: 0 0 calc(50% - 2rem);
   }
 }
 
 @media screen and (min-width: 992px) {
   .single-service {
+    -webkit-box-flex: 0;
     flex: 0 0 calc(33.333% - 2rem);
   }
   .service-icon {
@@ -452,6 +487,7 @@ some pictures section
 
 .pic {
   height: 17rem;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -473,11 +509,13 @@ some pictures section
   background: var(--clr-grey-10);
   box-shadow: var(--light-shadow);
   margin-bottom: 2rem;
+  -webkit-transition: var(--transition);
   transition: var(--transition);
 }
 
 .card:hover {
   box-shadow: var(--dark-shadow);
+  -webkit-transform: scale(1.02);
   transform: scale(1.02);
 }
 
@@ -492,22 +530,28 @@ some pictures section
 }
 
 .card-info-footer {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 
 @media screen and (min-width: 768px) {
   .pictures-center {
+    display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
     justify-content: space-between;
   }
   .card {
+    -webkit-box-flex: 0;
     flex: 0 0 calc(50% - 2rem);
   }
 }
 @media screen and (min-width: 1170px) {
   .card {
+    -webkit-box-flex: 0;
     flex: 0 0 calc(33.333% - 2rem);
   }
 }
@@ -540,6 +584,30 @@ Contact
   padding: 0.6rem 0.6rem;
 }
 
+.input::-webkit-input-placeholder {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  font-family: var(--ff-primary);
+}
+
+.input::-moz-placeholder {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  font-family: var(--ff-primary);
+}
+
+.input:-ms-input-placeholder {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  font-family: var(--ff-primary);
+}
+
+.input::-ms-input-placeholder {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  font-family: var(--ff-primary);
+}
+
 .input::placeholder {
   letter-spacing: var(--spacing);
   text-transform: capitalize;
@@ -553,6 +621,7 @@ Contact
   text-transform: capitalize;
   margin-left: 0.3rem;
   background: var(--clr-primary-8);
+  -webkit-transition: var(--transition);
   transition: var(--transition);
 }
 
@@ -564,7 +633,9 @@ Contact
 
 @media screen and (min-width: 992px) {
   .contact-center {
+    display: -webkit-box;
     display: flex;
+    -webkit-box-pack: space-evenly;
     justify-content: space-evenly;
   }
   .input {
@@ -583,12 +654,15 @@ Gallery
 }
 .gallery-img {
   height: 17rem;
+  -o-object-fit: cover;
   object-fit: cover;
+  -webkit-transition: var(--transition);
   transition: var(--transition);
 }
 
 .gallery-img-container {
   position: relative;
+  -webkit-transition: var(--transition);
   transition: var(--transition);
 }
 
@@ -599,8 +673,10 @@ Gallery
   left: 50%;
   font-size: 2rem;
   color: var(--clr-white);
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   opacity: 0;
+  -webkit-transition: var(--transition);
   transition: var(--transition);
 }
 
@@ -614,15 +690,18 @@ Gallery
 
 @media screen and (min-width: 768px) {
   .gallery {
+    display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
   }
   .gallery-img-container {
+    -webkit-box-flex: 0;
     flex: 0 0 50%;
   }
 }
 @media screen and (min-width: 992px) {
   .gallery-img-container {
+    -webkit-box-flex: 0;
     flex: 0 0 25%;
   }
 }
@@ -656,6 +735,7 @@ footer {
   font-size: 2rem;
   margin-right: 1rem;
   margin-bottom: 1.5rem;
+  -webkit-transition: var(--transition);
   transition: var(--transition);
 }
 
